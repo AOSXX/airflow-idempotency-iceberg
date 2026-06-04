@@ -78,7 +78,7 @@ table.overwrite(df=arrow_table, overwrite_filter=EqualTo("order_date", days_sinc
 │  ┌─────────────┐    ┌──────────────┐    ┌────────────────┐   │
 │  │ PostgreSQL  │    │   Airflow    │    │     MinIO      │   │
 │  │  source DB  │◄───│  scheduler   │───►│  (local S3)    │   │
-│  │  + targets  │    │  webserver   │    └────────┬───────┘   │
+│  │  + targets  │    │  webserver   │    └───────┬────────┘   │
 │  └─────────────┘    └──────────────┘            │            │
 │                                         ┌───────▼────────┐   │
 │                                         │ Iceberg REST   │   │
